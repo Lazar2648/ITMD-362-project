@@ -16,7 +16,7 @@
     <nav class="main-nav">
       <a href="#intro">Home</a>
       <a href="#specials">Specials</a>
-      <a href="#menu-visit">Menu & Visit</a>
+      <a href="#menu-visit">Menu &amp; Visit</a>
     </nav>
 
     <p class="cart-indicator">Cart (0)</p>
@@ -35,7 +35,7 @@
       </div>
 
       <div class="intro-image">
-        <!-- Image 1-->
+        <!-- Image 1, cheesy pizza-->
         <img src="images/image1.png" alt="Large cheesy pizza on a wooden board">
       </div>
     </section>
@@ -47,29 +47,77 @@
 	    Check out a few of our popular deals, inspired by Adam's Pizza Shop's coupon specials
 	  </p>
 
-	  <div class="specials-grid">
-	  	
-      <!--Special 1-------->
-      <article class="special-card">
-        <!--- Image 2----->
-	  	<img src="images/image2.png" alt="Large pizza with chicken wings and a drink">
-	  	<h3>Family Feast</h3>
-	  	<p>Large thin crust pizza, wings, and a 2-liter drink.</p>
-        <button class="special-details-btn">View details</button>
-        <p class="special-details hidden">
+	  <div class="specials-grid"> 	
+        <!--Special 1-------->
+        <article class="special-card">
+          <!--- Image 2, Large pizza with wings----->
+	  	  <img src="images/image2.png" alt="Large pizza with chicken wings and a drink">
+	  	  <h3>Family Feast</h3>
+	  	  <p>Large thin crust pizza, wings, and a 2-liter drink.</p>
+          <button class="special-details-btn">View details</button>
+          <p class="special-details hidden">
           Available Mon–Thu, carryout only. Extra toppings additional.
-        </p>
-      </article>
+          </p>
+        </article>
 
-      <!--Special 2-------------------->
-      <article class="special-card">
-        <!-- Image 3 ------>
-        <img src="images/image3.png" alt="Two medium pizzas on a table">
-        <h3>Two for Tuesday</h3>
-        <p>Two medium pizzas for one low price.</p>
-        <button class="special-details-btn">View details</button>
-        <p class="special-details hidden">
+        <!--Special 2-------------------->
+        <article class="special-card">
+          <!-- Image 3, two medium pizzas------>
+          <img src="images/image3.png" alt="Two medium pizzas on a table">
+          <h3>Two for Tuesday</h3>
+          <p>Two medium pizzas for one low price.</p>
+          <button class="special-details-btn">View details</button>
+          <p class="special-details hidden">
           Includes up to two toppings per pizza. Dine-in or carryout.
+          </p>
+        </article>
+
+        <!-- Special 3 --->
+        <article class="special-card">
+          <!-- Image 4 Slice and drink------>
+          <img src="images/image4.png" alt="Pizza slice and drink">
+          <h3>Slice &amp; Drink</h3>
+          <p>Fast lunch combo: slice of pizza and a fountain drink.</p>
+          <button class="special-details-btn">View details</button>
+          <p class="special-details hidden">
+            Available 11am–2pm. Selection may vary by day.
+          </p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- Section 3: Menu + Visit Us----------------------->
+    <section id="menu-visit" class="section menu-visit-section">
+      <!-- Menu preview (left side on desktop)------------>
+      <div class="menu-preview">
+        <h2>Our Menu</h2>
+        <p>
+          From classic thin crust to hearty double-decker pizzas, wings, and more.
+          Use the buttons below to filter a few sample items.
         </p>
-      </article>
+
+        <div class="menu-filters">
+          <button class="menu-filter-btn" data-filter="all">All</button>
+          <button class="menu-filter-btn" data-filter="pizza">Pizza</button>
+          <button class="menu-filter-btn" data-filter="wings">Wings</button>
+        </div>
+
+        <ul class="menu-items">
+          <li data-category="pizza">Supreme Thin Crust</li>
+          <li data-category="pizza">Double-Decker Meat Lovers</li>
+          <li data-category="pizza">Veggie Garden Pizza</li>
+          <li data-category="wings">Spicy Buffalo Wings</li>
+          <li data-category="wings">Garlic Parmesan Wings</li>
+        </ul>
+      </div>
+
+      <!-- Visit Us (Right side on Desktop)------>
+      <div class="visit-us">
+        <h2>Visit Us</h2>
+        <p>123 Pizza Street<br> Chicago, IL 60000</p>
+        <p>Open daily: 11:00am – 10:00pm</p>
+        <p>Phone: (123) 456-7890</p>
+
+        <!-- Image 5, Pizza store----->
+
 
