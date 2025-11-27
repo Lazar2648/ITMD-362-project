@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header ----------------------------->
+  <!-- Header --------------------------------------------------------->
   <header class="header">
     <div class="header-left">
       <h1>Adam's Pizza</h1>
@@ -24,7 +24,7 @@
   
 
   <main>
-    <!--Section 1: Intro-------------------->
+    <!--Section 1: Intro--------------------------------------------------------------------------------------------------------->
     <section id="intro" class="section intro-section">
       <div class="intro-text">
       	<h2>Welcome to Adam's Pizza</h2>
@@ -40,7 +40,7 @@
       </div>
     </section>
 
-	<!-- Section 2: Specials------------------>
+	<!-- Section 2: Specials----------------------------------------------------------->
 	<section id="specials" class="section specials-section">
 	  <h2>Today's Specials</h2>
 	  <p class="section-description">
@@ -48,9 +48,9 @@
 	  </p>
 
 	  <div class="specials-grid"> 	
-        <!--Special 1-------->
+        <!--Special 1------------------------------------------------------------------>
         <article class="special-card">
-          <!--- Image 2, Large pizza with wings----->
+          <!--- Image 2, Large pizza with wings---------------------------------------->
 	  	  <img src="images/image2.png" alt="Large pizza with chicken wings and a drink">
 	  	  <h3>Family Feast</h3>
 	  	  <p>Large thin crust pizza, wings, and a 2-liter drink.</p>
@@ -60,9 +60,9 @@
           </p>
         </article>
 
-        <!--Special 2-------------------->
+        <!--Special 2---------------------------------------------------->
         <article class="special-card">
-          <!-- Image 3, two medium pizzas------>
+          <!-- Image 3, two medium pizzas-------------------------------->
           <img src="images/image3.png" alt="Two medium pizzas on a table">
           <h3>Two for Tuesday</h3>
           <p>Two medium pizzas for one low price.</p>
@@ -72,9 +72,9 @@
           </p>
         </article>
 
-        <!-- Special 3 --->
+        <!-- Special 3 ----------------------------------------------->
         <article class="special-card">
-          <!-- Image 4 Slice and drink------>
+          <!-- Image 4 Slice and drink---------------------------->
           <img src="images/image4.png" alt="Pizza slice and drink">
           <h3>Slice &amp; Drink</h3>
           <p>Fast lunch combo: slice of pizza and a fountain drink.</p>
@@ -86,9 +86,9 @@
       </div>
     </section>
     
-    <!-- Section 3: Menu + Visit Us----------------------->
+    <!-- Section 3: Menu + Visit Us--------------------------------------------->
     <section id="menu-visit" class="section menu-visit-section">
-      <!-- Menu preview (left side on desktop)------------>
+      <!-- Menu preview (left side on desktop)---------------------------------->
       <div class="menu-preview">
         <h2>Our Menu</h2>
         <p>
@@ -111,20 +111,56 @@
         </ul>
       </div>
 
-      <!-- Visit Us (Right side on Desktop)------>
+      <!-- Visit Us (Right side on Desktop)--------->
       <div class="visit-us">
         <h2>Visit Us</h2>
         <p>123 Pizza Street<br> Chicago, IL 60000</p>
         <p>Open daily: 11:00am – 10:00pm</p>
         <p>Phone: (123) 456-7890</p>
 
-        <!-- Image 5, Pizza store----->
-        <img src="images/storefront.jpg" alt="Pizza shop storefront and sign">
+        <!-- Image 5, Pizza store------------------------------->
+        <img src="images/image5.png" alt="Pizza shop storefront">
 
         <button id="order-btn">Order Now</button>
         <p id="order-message" class="order-message"></p>
       </div>
     </section>
+    
+    <!----- Section 4, Customer feedback -------------------------------------->
+    <section id="feedback" class="section feedback-section">
+      <h2>Customer Feedback</h2>
+      <p class="section-note">Tell us what you think about our pizza.</p>
+
+      <form class="feedback-form" id="feedbackForm">
+        <div class="form-row">
+          <label for="nameInput">Name *</label>
+          <input type="text" id="nameInput" placeholder="Your name">
+          <p class="error" id="nameError"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="emailInput">Email *</label>
+          <input type="email" id="emailInput" placeholder="you@example.com">
+          <p class="error" id="emailError"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="pizzaInput">Favorite Pizza</label>
+          <input type="text" id="pizzaInput" placeholder="e.g. Supreme Thin Crust">
+        </div>
+
+        <div class="form-row">
+          <label for="messageInput">Comments</label>
+          <textarea id="messageInput" rows="3" placeholder="Write your feedback..."></textarea>
+        </div>
+
+        <button type="submit" class="feedback-submit-btn">Submit Feedback</button>
+
+        <p class="success" id="formSuccess"></p>
+      </form>
+    </section>
+
+
   </main>
 
   <!-- FOOTER ----------------------------------------------------------------->

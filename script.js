@@ -1,6 +1,6 @@
 // Run the script only after the HTML is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  /* 1) Scroll to Specials from Intro */
+  /*1) Scroll to Specials from Intro */
   const seeSpecialsBtn = document.getElementById("see-specials-btn");
   const specialsSection = document.getElementById("specials");
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function () {
       const filter = btn.getAttribute("data-filter"); // "all", "pizza", or "wings"
 
-      // visually highlight the active filter button
+      // Visually highlight the active filter button
       filterButtons.forEach(function (b) {
         b.classList.remove("active-filter");
       });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* 4) Show message when "Order Now" is clicked */
+  /* 4) "Order Now" button shows a message */
   const orderBtn = document.getElementById("order-btn");
   const orderMessage = document.getElementById("order-message");
 
@@ -65,6 +65,61 @@ document.addEventListener("DOMContentLoaded", function () {
     orderBtn.addEventListener("click", function () {
       orderMessage.textContent =
         "Online ordering is coming soon! Please call (123) 456-7890 to place your order.";
+    });
+  }
+
+  /* 5) Customer Feedback form validation (Name + Email required)*/
+  const feedbackForm = document.getElementById("feedbackForm");
+  const nameInput = document.getElementById("nameInput");
+  const emailInput = document.getElementById("emailInput");
+  const pizzaInput = document.getElementById("pizzaInput");
+  const messageInput = document.getElementById("messageInput");
+
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const formSuccess = document.getElementById("formSuccess");
+
+  if (
+    feedbackForm &&
+    nameInput &&
+    emailInput &&
+    nameError &&
+    emailError &&
+    formSuccess
+  ) {
+    feedbackForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Stop real form submission
+
+      let valid = true;
+
+      // Clear previous messages
+      nameError.textContent = "";
+      emailError.textContent = "";
+      formSuccess.textContent = "";
+
+      // Validate name
+      if (nameInput.value.trim() === "") {
+        nameError.textContent = "Name is required.";
+        valid = false;
+      }
+
+      // Validate email
+      if (emailInput.value.trim() === "") {
+        emailError.textContent = "Email is required.";
+        valid = false;
+      } else if (!emailInput.value.includes("@")) {
+        emailError.textContent = "Please enter a valid email.";
+        valid = false;
+      }
+
+      // If everything is valid, show success message
+      if (valid) {
+        formSuccess.textContent =
+          "Thank you! Your feedback was received ";
+
+        //clear the form
+        feedbackForm.reset();
+      }
     });
   }
 });
