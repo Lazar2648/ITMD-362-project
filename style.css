@@ -197,6 +197,11 @@ body {
   color: #fff;
 }
 
+.active-filter {
+  background-color: #b03030;
+  color: #fff;
+}
+
 .menu-items {
   list-style: none;
   padding-left: 0;
