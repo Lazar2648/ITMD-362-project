@@ -1,2 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adam's Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header ----------------------------->
+  <header class="header">
+    <div class="header-left">
+      <h1>Adam's Pizza</h1>
+      <p class="tagline">Thin crust · Double-decker · Local favorite</p>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#intro">Home</a>
+      <a href="#specials">Specials</a>
+      <a href="#menu-visit">Menu & Visit</a>
+    </nav>
+
+    <p class="cart-indicator">Cart (0)</p>
+  </header>
+  
+
+  <main>
+    <!--Section 1: Intro-------------------->
+    <section id="intro" class="section intro-selection">
+      <div class="intro-text">
+      	<h2>Welcome to Adam's Pizza</h2>
+      	<p>
+      	  Inspired by classic neighberhood pizza shops, we serve thin crust, double-decker, and stuffed pies baked fresh every day.
+      	</p>
+      	<button id="see-specials-btn">See Today’s Specials</button>
+      </div>
+
+      <div class="intro-image">
+        <!-- Image 1-->
+        <img src="images/image1.png" alt="Large cheesy pizza on a wooden board">
+      </div>
+    </section>
+
+	<!-- Section 2: Specials------------------>
+	<section id="specials" class="section specials-section">
+	  <h2>Today's Specials</h2>
+	  <p class="section-description">
+	    Check out a few of our popular deals, inspired by Adam's Pizza Shop's coupon specials
+	  </p>
+
+	  <div class="specials-grid">
+	  	
+      <!--Special 1-------->
+      <article class="special-card">
+        <!--- Image 2----->
+	  	<img src="images/image2.png" alt="Large pizza with chicken wings and a drink">
+	  	<h3>Family Feast</h3>
+	  	<p>Large thin crust pizza, wings, and a 2-liter drink.</p>
+        <button class="special-details-btn">View details</button>
+        <p class="special-details hidden">
+          Available Mon–Thu, carryout only. Extra toppings additional.
+        </p>
+      </article>
+
+      <!--Special 2-------------------->
+      <article class="special-card">
+        <!-- Image 3 ------>
+        <img src="images/image3.png" alt="Two medium pizzas on a table">
+        <h3>Two for Tuesday</h3>
+        <p>Two medium pizzas for one low price.</p>
+        <button class="special-details-btn">View details</button>
+        <p class="special-details hidden">
+          Includes up to two toppings per pizza. Dine-in or carryout.
+        </p>
+      </article>
+
